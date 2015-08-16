@@ -1,0 +1,101 @@
+install.packages("xlsx", repos="http://cran.us.r-project.org")
+library(xlsx)
+fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx"
+download.file(fileURL, destFile="gasData.xlsx", method="curl")
+download.file(fileURL, destFile="gasData.xlsx", method="curl")
+fileURL
+download.file(fileURL, destFile="gasData.xlsx", method="curl")
+list.files()
+setwd("Desktop/coursera_r")
+list.files()
+setwd("Getting and Cleaning Data/Quiz1")
+download.file(fileURL, destFile="gasData.xlsx", method="curl")
+list.files()
+download.file(fileURL, destFile="gasData.xlsx", method="curl")
+download.file(fileURL, destFile="gas.xlsx", method="curl")
+download.file(fileURL, destFile="gas.xlsx", method="curl")
+fileURL
+download.file(fileURL, destfile="gas.xlsx", method="curl")
+list.files()
+library(xlsx)
+gasData <- read.xlsx("gas.xlsx", sheetIndex=1, header=TRUE)
+head(gasData)
+colIndex <- 7:15
+rowIndex <- 18:23
+dat <- read.xlsx("gasData.xlsx", sheetIndex=1, colIndex=colIndex, rowIndex=rowIndex)
+dat <- read.xlsx("gasData", sheetIndex=1, colIndex=colIndex, rowIndex=rowIndex)
+list.files()
+dat <- read.xlsx("gas.xlsx", sheetIndex=1, colIndex=colIndex, rowIndex=rowIndex)
+data
+dat
+sum(dat$Zip*dat$Ext,na.rm=T)
+fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
+import.packages("XML", repos="http://cran.us.r-project.org")
+install.packages("XML", repos="http://cran.us.r-project.org")
+library(XML)
+restData <- xmlTreeParse(fileURL, useInternal=TRUE)
+restData
+fileURL
+restData <- xmlTreeParse(fileURL, useInternal=TRUE)
+fileURL <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
+restData <- xmlTreeParse(fileURL, useInternal=TRUE)
+rootNode <- xmlRoot(restData)
+rootNode
+names(rootNode)
+rootNode[[1]]
+zips <- xpathSApply(restData,"//zipcode", xmlValue)
+zips
+length(zips)
+y <- zips == 21231
+y
+only <- zips[y]
+only
+length(only)
+fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+download.file(fileURL, destfile="usCommunities.csv", method="curl")
+list.files()
+communityData <- read.table("usCommunities.csv", sep=",", header=TRUE)
+head(communityData)
+DT
+fread
+fread()
+communityData
+install.packages("data.table", repos="http://cran.us.r-project.org")
+library(data.table)
+fread(communityData)
+fread("usCommunities.csv")
+DT = fread("usCommunities.csv")
+example(data.table)
+cube <- function (x, n) {}
+cube <- function (x, n) { x^3}
+cube(3)
+x <- 0
+x <- 1:10
+if (x>5) { x <- 0}
+f <- function (x) { g<- function (y) { y + z} z <- 4 x + g(x)}
+f <- function (x) { g<- function (y) { y + z} z <- 4 x + g(x)}
+d <- 3L
+d
+z <- cbind(x, d)
+z
+x
+d
+getwd()
+setwd("../..")
+getwd()
+setwd("R programming/programming hw1")
+setwd("specdata")
+list.files()
+pad <- function(x) { if (x < 10) x <-str_pad(x, 3, pad="0") }
+pad(3)
+library(stringr)
+pad(3)
+x
+x <- 3
+pad(x)
+cor(1:10, 2:11)
+cor(1:9, 2:8)
+cor(1:9, 91:100)
+cor(1:10, 91:100)
+cor(50:60, c(23, 12, 23, 12, 23, 12, 12, 12, 12, 12))
+cor(50:60, c(23, 12, 23, 12, 23, 12, 12, 12, 12, 12, 23))
